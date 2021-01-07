@@ -1,0 +1,55 @@
+#hed{
+	width:400px;
+	margin:10px 0 10px calc(50% - 200px);
+	text-align:center;
+	font-size:30px;
+}
+#go_back{
+	text-align:center;
+	height:40px;
+	width:100px;
+	background-color:#1ba1e2;
+	border:none;
+	font-size:17px;
+	color:white;
+}
+#logout{
+	text-align:center;
+	height:40px;
+	width:100px;
+	background-color:#1ba1e2;
+	border:none;
+	font-size:17px;
+	color:white;
+} 
+#logout:hover,#go_back:hover{
+	color: #f0a30a;
+}
+#f_buttons{
+	margin-left:calc(95% - 210px);
+}
+#timetable{
+	width:100%;
+	border-collapse: collapse;
+	table-layout:fixed;
+	min-width:1100px;
+}
+#timetable td{
+	border: 1px solid black;
+	overflow:hidden;
+	padding:5px 0;
+}
+#timetable tbody{
+	border: 2px solid white;
+}
+tr td:first-child{
+	text-align:right;
+	padding-right:5px !important;
+	width:10%;
+}
+tr td:not(:first-child){
+	text-align:center;
+}
+tr:first-child td:first-child{
+	text-align:center;
+}
