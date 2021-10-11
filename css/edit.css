@@ -1,0 +1,52 @@
+#hed{
+	width:400px;
+	margin:100px 0 30px calc(50% - 200px);
+	text-align:center;
+	font-size:30px;
+}
+#go_back{
+	text-align:center;
+	height:40px;
+	width:100px;
+	background-color:#1ba1e2;
+	border:none;
+	font-size:17px;
+	color:white;
+}
+#logout{
+	text-align:center;
+	height:40px;
+	width:100px;
+	background-color:#1ba1e2;
+	border:none;
+	font-size:17px;
+	color:white;
+} 
+#logout:hover,#go_back:hover{
+	color: #f0a30a;
+}
+#f_buttons{
+	margin-left:calc(95% - 210px);
+}
+.main_button{
+	margin:2%;
+	width:46%;
+	height:90px;
+	text-align:center;
+	font-size:20px;
+	background-color:#1ba1e2;
+	border:none;
+	margin-bottom:20px;
+	border-radius:5px;
+	color:white;
+	-webkit-box-shadow: 5px 5px 30px 0px rgba(170,170,170,0.9);
+	-moz-box-shadow: 5px 5px 30px 0px rgba(170,170,170,0.9);
+	box-shadow: 5px 5px 30px 0px rgba(170,170,170,0.9);
+}
+.main_button:hover{
+	color: #f0a30a;
+}
+#options{
+	width:90%;
+	margin:40px 30% 0 5%;
+}
