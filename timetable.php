@@ -11,7 +11,9 @@
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Harmonogramy</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 	<link href="css/main.css" rel="stylesheet"/>
 	<link href="fontello/css/fontello.css" rel="stylesheet"/>
 	<link href="css/timetable.css" rel="stylesheet"/>
@@ -83,10 +85,17 @@
 </head>
 <body>
 	<div id="container">
-		<div id="f_buttons">
-			<a href="index.php"><button id="go_back">Wróć</button></a>
-			<a href="log.php?logout"><button id="logout">Wyloguj</button></a>
-		</div>
+		<nav class="navbar bg-nav-blue navbar-dark">
+			<div class="navbar-brand  mb-0">Witaj, <?=$_SESSION["user"]["name"]." ".$_SESSION["user"]["surname"]." !" ?> </div>
+			<ul class="nav justify-content-end">
+				<li class="nav-item">
+					<a class="nav-link" href="index.php"> Wróć </a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="log.php?logout"> Wyloguj </a>
+				</li>
+			</ul>
+		</nav>
 		<div id="hed">Harmonogram
 			<?php
 				( @include 'helpers/db_connection.php' ) || die( 'Brak pliku db_connection.php' );
@@ -101,7 +110,7 @@
 				echo " ".$timetable["month_in_words"]." ".$timetable["year"]."<div id=\"timetable_id_div\" style=\"display:none\">".$_POST["timetable_id"]."</div>";
 			?>
 		</div>
-		<hr/>
+	
 		<table id="timetable">
 			<?php
 				try {
@@ -113,7 +122,7 @@
 				   error_log(var_export($msg, true));
 				};
 				//Generowanie listy opcji dla pól w tabeli do zmiennej $option_li
-				$option_li = "<i><i/><select class=\"option_list\"><option value=\"0\" >-</option>";
+				$option_li = "<select class=\"option_list\"><option value=\"0\" >-</option>";
 				for($a=1;$a<=25;$a++){
 					if($options["option".$a] !== NULL){
 						$option_li .="<option value=\"".$options["option".$a."_value"]."\">".$options["option".$a]."</option>";
@@ -187,11 +196,13 @@
 			?>
 		</table>
 	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
 </html>
-	<?php 
-	// 	echo $how_many_workers."<br /><br />";
+	<?php
+	//	echo $how_many_workers."<br /><br />";
 	//	echo var_dump($options)."<br /><br />";
 	//	echo var_dump($timetable)."<br /><br />";
 	//	echo var_dump($_POST);
-	?> 
+	//	echo var_dump($_SESSION);
+	?>

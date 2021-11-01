@@ -5,3 +5,15 @@ body{
 button:focus{
 	outline:none;
 }
+.bg-nav-blue{
+	background-color:#1ba1e2 !important;
+}
+a.nav-link{
+	color:white !important;
+}
+a.nav-link:hover{
+	color: #f0a30a !important;
+}
+div.navbar-brand{
+	margin-left:5% !important;
+}
