@@ -189,7 +189,7 @@
 	</div>
 </body>
 </html>
-	<?php
+	<?php 
 	// 	echo $how_many_workers."<br /><br />";
 	//	echo var_dump($options)."<br /><br />";
 	//	echo var_dump($timetable)."<br /><br />";
