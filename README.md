@@ -1,7 +1,7 @@
 # Harmonogramy
 Ogólnie:
 Aplikacja służy do tworzenia harmonogramów dla swoich pracowników/współpracowników. Na podstawie podanego roku, miesiąca, liczby godzin wymaganych do pełnego etatu oraz listy pracowników generuje się harmonogram w formie tabeli. Do każdego harmonogramu w czasie tworzenia przypisujemy jeden ze schematów godzin, które wcześniej utworzyliśmy w osobnej zakładce. Komórki tabeli zawierają listę rozwijaną na którą składają się wcześniej zdefiniowane możliwość oraz przypisane do niej wagi(np. 7-17->10h 8-16->8h Urlop->8h Wolne->0h Urlop bezpłatny->0h). W tabeli pomarańczowym kolorem oznaczone są weekendy. Wszystkie utworzone harmonogramy są przechowywane w bazie danych i można do nich wrócić w dowolnyum momencie. Zmiany są zapisywane automatycznie podczas edycji.
-
+/br
 Aktualnie aplikacja jest dostępna pod adresem http://mateuszpek.cba.pl 
 
 Jak utworzyć swój pierwszy harmonogram:
