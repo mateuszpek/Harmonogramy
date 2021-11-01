@@ -194,4 +194,4 @@
 	//	echo var_dump($options)."<br /><br />";
 	//	echo var_dump($timetable)."<br /><br />";
 	//	echo var_dump($_POST);
-	?>
+	?> 
